@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Solution-for module2</title>
+  <style type="text/css">
+
+    h1 {
+        text-align: center;
+       }
+
+    h2 {
+        text-align: right;
+        margin-top: 0em;
+       }
+    #me h2 {
+            background-color: pink;
+           }
+    #college h2 
+    {
+      background-color: red;
+    }
+    #hobbies h2 
+    {
+      background-color: yellow;
+    }
+    p {
+      margin: 5px;
+      height: 120px;
+      text-align: justify;
+      clear: right;
+    }
+    div {
+        border: 2px black solid;
+        background-color: lightgrey;
+      }
+        div h2  {
+        width: 30%;
+        float: right;
+        border-left: 2px black solid;
+        border-bottom: 2px black solid;
+        text-align: center;
+      }
+
+    @media (min-width: 992px) {
+      div {
+        width: 28%;
+        float: left;
+        margin: 2%;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) 
+    {
+      #me, #college 
+      {
+        width: 40%;
+        float: left;
+        margin: 4%;
+      }
+      #hobbies {
+                width: 90%;
+                float: left;
+                margin: 4%;
+              }
+    }
+    @media (max-width: 767px) {
+      div {
+        margin: 2em;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+  <h1>Our menu</h1></header>
+
+  <div id="me">
+    <h2>About Me</h2>
+    <p>Hi there, my name is Kiran Kanth Reddy.Call me as Kanth. I am from ferozpur, Punjab (India). Currentely I am pursuing B.Tech Computer Science and engineering  from Lovely Professional University.</p>
+  </div>
+
+  <div id="college">
+    <h2>My College</h2>
+    <p>My college name is "Lovely Professional University". It has the largest campus in the north india and around 30k students are enrolled in the university. It's kind of a small city in itself. It's infarstructure is so teriffic </p>
+  </div>
+
+  <div id="hobbies">
+    <h2>My Hobbies</h2>
+    <p>My hobbies are to learn new things ,listening music,and playing Badminton</p>
+  </div>
+</body>
+</html>
